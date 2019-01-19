@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>My First Deployed Form</title>
+  </head>
+  <body>
+    <h1>My First Deployed Form</h1>
+    <form action="https://formspree.io/bahia@almakinah.com"
+        method="POST">
+      <fieldset>
+        <legend>Application Form</legend>
+        <fieldset>
+          <legend>Personal Details</legend>
+          <label for="name">Name</label>
+          <input type="text" name="name" id="name">
+          <label for="email">Email</label>
+          <input type="email" name="email" id="email" placeholder="youremail@domain.com">
+          <label for="birthdate">Date of Birth</label>
+          <input type="date" name="birthdate" id="birthdate">
+        </fieldset>
+        <fieldset>
+          <legend>Interests</legend>
+          <label for="hiking">Hiking</label>
+          <input type="checkbox" name="interests" value="0" id="hiking">
+          <label for="cycling">Cycling</label>
+          <input type="checkbox" name="interests" value="1" id="cycling">
+          <label for="reading">Reading</label>
+          <input type="checkbox" name="interests" value="2" id="reading">
+        </fieldset>
+        <fieldset>
+          <legend>Gender</legend>
+          <label for="female">Female</label>
+          <input type="radio" name="gender" value="0" id="female">
+          <label for="male">Male</label>
+          <input type="radio" name="gender" value="1" id="male">
+        </fieldset>
+        <fieldset>
+          <legend>Background</legend>
+          <label for="background">Tell me about yourself: </label>
+          <textarea name="textarea" id="background" placeholder="Tell me about yourself..."></textarea>
+        </fieldset>
+        <button>Submit</button>
+      </fieldset>
+    </form>
+  </body>
+</html>
